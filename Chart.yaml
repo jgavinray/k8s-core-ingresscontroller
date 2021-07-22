@@ -1,0 +1,12 @@
+apiVersion: v2
+name: ingress-controller
+description: A Helm chart for Deploying My Ingress Controller
+type: application
+version: 0.0.1
+sources:
+  - https://github.com/jgavinray/k8s-core-ingresscontroller
+dependencies:
+  - name: ingress-nginx
+    repository: https://kubernetes.github.io/ingress-nginx
+    version: 3.24.0
+
